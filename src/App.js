@@ -1,7 +1,7 @@
-import LoginScreen from "./components/LoginScreen/LoginScreen";
+import SignupScreen from "./pages/SignupScreen/SignupScreen";
 function App() {
   return (
-    <LoginScreen></LoginScreen>
+    <SignupScreen></SignupScreen>
   );
 }
 
