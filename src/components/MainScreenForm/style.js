@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  width: 752px;
+  width: 100%;
   height: 334px;
   background-color: #ffffff;
   border: 1px solid #cccccc;
@@ -30,7 +30,7 @@ export const SectionContent = styled.div`
   }
 
   .titleInput {
-    width: 704px;
+    width: 100%;
     height: 32px;
     background: #ffffff;
     border: 1px solid #777777;
@@ -39,7 +39,7 @@ export const SectionContent = styled.div`
   }
 
   .contentInput {
-    width: 704px;
+    width: 100%;
     height: 74px;
     background: #ffffff;
     border: 1px solid #777777;
@@ -62,6 +62,9 @@ export const SectionContent = styled.div`
 `;
 
 export const Button = styled.button`
+  position: absolute;
+  right: 48px;
+
   width: 111px;
   height: 32px;
   background: #7695ec;
@@ -72,7 +75,4 @@ export const Button = styled.button`
   font-size: 16px;
   color: #ffffff;
   border: none;
-  position: absolute;
-  left: 618px;
-  right: 0px;
 `;
