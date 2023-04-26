@@ -1,7 +1,12 @@
 import SignupScreen from "./pages/SignupScreen/SignupScreen";
+
+import MainScreenForm from "./components/MainScreenForm/MainScreenForm";
 function App() {
   return (
-    <SignupScreen></SignupScreen>
+    <>
+      {/* <SignupScreen></SignupScreen> */}
+      <MainScreenForm></MainScreenForm>
+    </>
   );
 }
 
