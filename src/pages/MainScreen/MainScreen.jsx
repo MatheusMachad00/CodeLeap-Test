@@ -1,13 +1,13 @@
-import { Header, Main } from "./style";
+import { Header, Main, Body } from "./style";
 import MainScreenForm from "../../components/MainScreenForm/MainScreenForm";
 
 export default function MainScreen() {
   return (
-    <>
+    <Main>
       <Header>CodeLeap Network</Header>
-      <Main>
+      <Body>
         <MainScreenForm></MainScreenForm>
-      </Main>
-    </>
+      </Body>
+    </Main>
   );
 }

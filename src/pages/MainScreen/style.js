@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-  width: 100%;
+  width: 800px;
   height: 80px;
   background: #7695ec;
   font-family: "Roboto";
@@ -10,13 +10,18 @@ export const Header = styled.header`
   font-size: 22px;
   color: #ffffff;
   padding: 27px 0px 27px 37px;
+  border: 1px solid #999999;
 `;
 
 export const Main = styled.main`
-  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: auto;
-`
+`;
+
+export const Body = styled.div`
+  padding: 24px;
+  background-color: #ffffff;
+  width: 800px;
+`;

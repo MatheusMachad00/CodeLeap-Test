@@ -6,6 +6,7 @@ export const Section = styled.section`
   background-color: #ffffff;
   border: 1px solid #cccccc;
   border-radius: 16px;
+  position: relative;
 `;
 
 export const SectionContent = styled.div`
@@ -63,7 +64,7 @@ export const SectionContent = styled.div`
 
 export const Button = styled.button`
   position: absolute;
-  right: 48px;
+  right: 24px;
 
   width: 111px;
   height: 32px;
