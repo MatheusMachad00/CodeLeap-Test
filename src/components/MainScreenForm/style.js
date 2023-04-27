@@ -68,7 +68,7 @@ export const Button = styled.button`
 
   width: 111px;
   height: 32px;
-  background: #7695ec;
+  background: ${(props) => (props.isEnabled ? "#7695ec" : "grey")};
   border-radius: 8px;
   font-family: "Roboto";
   font-style: normal;
