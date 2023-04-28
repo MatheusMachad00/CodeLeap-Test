@@ -4,6 +4,7 @@ import { Main, PostTop, PostBottom } from "./style";
 import EditModal from "../EditModal/EditModal"
 import DeleteModal from "../DeleteModal/DeleteModal"
 import { useState } from "react";
+import SetPostHour from "../../actions/SetPostHour";
 
 
 export default function Post({ id, username, date, title, content }) {
@@ -25,7 +26,7 @@ export default function Post({ id, username, date, title, content }) {
         <PostBottom>
           <div>
             <h1>@{username}</h1>
-            <h2>{date}</h2>
+            <h2>{SetPostHour(date)}</h2>
           </div>
           <p>{content}</p>
         </PostBottom>
