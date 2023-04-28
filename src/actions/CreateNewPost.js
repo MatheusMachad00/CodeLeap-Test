@@ -10,7 +10,6 @@ export default function CreateNewPost(username, title, content) {
   });
 
   request.then((response) => {
-    /* window.reload(); */ //arrumar essa parte após resolver o get
     console.log(response);
   });
   request.catch((err) => {

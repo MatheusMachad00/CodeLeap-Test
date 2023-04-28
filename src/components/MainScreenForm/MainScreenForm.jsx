@@ -1,7 +1,6 @@
 import { Section, SectionContent, Button } from "./style";
 import { useState } from "react";
 import CreateNewPost from "../../actions/CreateNewPost";
-
 export default function MainScreenForm() {
   const [title, setTitle] = useState({});
   const [content, setContent] = useState({});
@@ -18,7 +17,6 @@ export default function MainScreenForm() {
   }
 
   function sendPost(event) {
-    event.preventDefault();
     CreateNewPost("test3", title, content); //resolver a questão do username
   }
 
