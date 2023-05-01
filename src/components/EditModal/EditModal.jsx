@@ -1,10 +1,14 @@
 import { Modal, Form, Buttons, BackgroundFade } from "./style";
+import { useState, useEffect } from "react";
 import EditPost from "../../actions/EditPost";
-import { useState } from "react";
 
 export default function EditModal({ setEditPopupIsOpen, id }) {
   const [title, setTitle] = useState(false);
   const [content, setContent] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <BackgroundFade>

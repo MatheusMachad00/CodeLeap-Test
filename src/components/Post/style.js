@@ -47,6 +47,7 @@ export const PostTop = styled.div`
   button{
   background-color: #7695ec;
   border: none;
+  cursor: pointer;
 }
 `;
 
@@ -86,5 +87,7 @@ export const PostBottom = styled.div`
     font-size: 18px;
     color: #000000;
     margin-top: 16px;
+    width: 704px;
+    height: auto;
   }
 `;
