@@ -1,10 +1,13 @@
 import { Section, SectionContent, Button } from "./style";
 import { useState } from "react";
 import CreateNewPost from "../../actions/CreateNewPost";
+import { useSelector } from "react-redux";
+
 export default function MainScreenForm() {
   const [title, setTitle] = useState({});
   const [content, setContent] = useState({});
   const [isEnabled, setIsEnabled] = useState(false);
+  const username = useSelector((state) => state.username.value);
 
   function changeColor(data, type) {
     if (type === "title") {
@@ -16,8 +19,8 @@ export default function MainScreenForm() {
     }
   }
 
-  function sendPost(event) {
-    CreateNewPost("test3", title, content); //resolver a questão do username
+  function sendPost() {
+    CreateNewPost(username, title, content);
   }
 
   return (
