@@ -12,6 +12,7 @@ export const Modal = styled.div`
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
+  position: sticky;
 
   h1 {
     font-family: "Roboto";
@@ -102,4 +103,5 @@ export const BackgroundFade = styled.div`
   top: 0;
   left: 0;
   width: 100%;
+  position: sticky;
 `;

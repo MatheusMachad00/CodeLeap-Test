@@ -5,11 +5,13 @@ import EditModal from "../EditModal/EditModal"
 import DeleteModal from "../DeleteModal/DeleteModal"
 import { useState } from "react";
 import SetPostHour from "../../actions/SetPostHour";
+import { useSelector } from "react-redux";
 
 
 export default function Post({ id, username, date, title, content }) {
   const [editPopupIsOpen, setEditPopupIsOpen] = useState(false);
   const [deletePopupIsOpen, setDeletePopupIsOpen] = useState(false);
+  const name = useSelector((state) => state.username.value);
 
   return (
     <>
@@ -18,10 +20,10 @@ export default function Post({ id, username, date, title, content }) {
       <Main>
         <PostTop>
           <header>{title}</header>
-          <div>
+          {(name === username) ? <div>
             <button onClick={() => {setDeletePopupIsOpen(true)}}><img src={TRASH_CAN} alt="trash can" className="trashButton" /></button>
             <button onClick={() => {setEditPopupIsOpen(true)}}><img src={EDIT_BUTTON} alt="edit button" /></button>
-          </div>
+          </div> : <></>}
         </PostTop>
         <PostBottom>
           <div>
