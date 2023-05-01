@@ -43,6 +43,11 @@ export const PostTop = styled.div`
     margin-right: 27.7px;
     height: 22.5px;
   }
+
+  button{
+  background-color: #7695ec;
+  border: none;
+}
 `;
 
 export const PostBottom = styled.div`
