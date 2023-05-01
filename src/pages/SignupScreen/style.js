@@ -69,4 +69,5 @@ export const PopUpButton = styled.button`
   position: absolute;
   left: 365px;
   right: 24px;
+  cursor: pointer;
 `;
